@@ -1,0 +1,67 @@
+.title {
+    position: fixed;
+    top: $margin-small * 2;
+    left: $margin-small;
+    right: $margin-small;
+    bottom: $margin-small * 8;
+    background-image: url(assets/title.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    @include fade-in-on-load;
+    
+    @include tablet {
+        top: $margin-large;
+        left: $margin-large;
+        right: $margin-large;
+        bottom: $margin-large * 6;
+    }
+    
+}
+
+.logos {
+    position: fixed;
+    height: $margin-small;
+    bottom: $margin-small * 1.25;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    
+    @include fade-in-on-load;
+    
+    @include tablet {
+        bottom: $margin-large * 1.125;
+        height: $margin-large * .75;
+    }
+    
+    z-index: 10;
+    
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        &:not(:last-child) {
+            margin-right: 2em;
+        }
+    }
+    
+}
+
+.credit {
+    
+    position: fixed;
+    font-size: .5em;
+    bottom: $margin-small * .5;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #999;
+    z-index: 200;
+    
+    @include tablet {
+        bottom: $margin-large * .5;
+        font-size: .66em;
+    }
+    
+    @include fade-in-on-load;
+    
+}

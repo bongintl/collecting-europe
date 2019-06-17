@@ -1,0 +1,19 @@
+@import 'modules/variables';
+@import 'modules/mixins';
+@import 'modules/breakpoints';
+
+@import 'globals/reset';
+@import 'globals/body';
+@import 'globals/canvas';
+@import 'globals/grid';
+@import 'globals/buttons';
+@import 'globals/tabs';
+@import 'globals/translation';
+
+@import 'partials/home';
+@import 'partials/modal';
+@import 'partials/questions';
+@import 'partials/age-location';
+@import 'partials/sandbox';
+@import 'partials/single';
+@import 'partials/list';
